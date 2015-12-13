@@ -23,7 +23,7 @@ function getCardapioDoDia(callback) {
 
 	request(urlbase, function(error, response, body) {
 				 if (!error && response.statusCode == 200) {
-						 $ = cheerio.load(body);CardapioDoDia
+						 $ = cheerio.load(body);
 
 						 var conteudo = $('div#sistema_cardapio');
 
