@@ -12,38 +12,38 @@ var urlbase = "http://legiao.prefeitura.unicamp.br/cardapio.php";
 module.exports = {
 
 	all:function (req, res) {
-		getCardapioSemanal(function(result){
+		getCardapioDoDia(function(result){
 			return res.json(result);
 		});
 	}
 
 };
 
-function getCardapioSemanal(callback) {
+function getCardapioDoDia(callback) {
 
 	request(urlbase, function(error, response, body) {
 				 if (!error && response.statusCode == 200) {
-						 $ = cheerio.load(body);
+						 $ = cheerio.load(body);CardapioDoDia
 
 						 var conteudo = $('div#sistema_cardapio');
 
 						 var cardapioDoDia = {};
+
 						 cardapioDoDia.dia = conteudo.find('p.titulo').text();
 
 						 var cardapios = [];
 
 						 $('span.titulo_cardapio').each(function(index, value) {
-
 							 var cardapio = {};
 							 cardapio.titulo = $(this).text();
 							 cardapios.push(cardapio);
 						 });
 
 						 $('table.fundo_cardapio').each(function(index, value) {
-							 var itens = [];
-							 $(this).find('td').each(function(index1, value1) {
-								 itens[index1] = $(this).text();
-							 });
+								 var itens = [];
+								 $(this).find('td').each(function(index1, value1) {
+									 itens[index1] = $(this).text();
+								 });
 							 cardapios[index].itens = itens;
 						 });
 
