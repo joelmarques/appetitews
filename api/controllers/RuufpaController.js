@@ -28,11 +28,21 @@ function getCardapioSemanal(callback) {
 				 if (!error && response.statusCode == 200) {
 						 $ = cheerio.load(body);
 
+						 var cardapio = {};
+						 var cabecalhos = [];
 						 var diasDaSemana = [];
 
 						 $('table#wrap td#centro table').each(function(index, value) {
 
 							 var padding = $(this).attr('cellpadding');
+
+							 if (padding == -1) {//tabela com cabeçalho do cardapio
+
+								 $(this).find('p').each(function(index, value) {
+									 cabecalhos[index] = $(this).text();
+								});
+								 cardapio.cabecalhos = cabecalhos;
+							 }
 
 							 if (padding == 1) {//tabela do cardapio
 
@@ -86,10 +96,10 @@ function getCardapioSemanal(callback) {
 									}//final sexta-feira
 
 								});
+								cardapio.diasDaSemana = diasDaSemana;
 							 }
-
 						 });
-						 callback(diasDaSemana)
+						 callback(cardapio)
 				 }
 		 });
 }
