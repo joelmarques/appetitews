@@ -21,57 +21,57 @@
 
 	 var cabecalhos = [];
 	 cabecalhos[0] = 'CARDÁPIO SEMANAL MÊS: JANEIRO /2016 ';
-	 cabecalhos[1] = '2ª SEMANA';
+	 cabecalhos[1] = '3ª SEMANA';
 	 cardapio.cabecalhos = cabecalhos;
 
 	 var diasDaSemana = [];
 	 var diaDaSemana = {};
 
 	 //segunda-feira
-	 diaDaSemana.dia = 'SEGUNDA (11/01)';
-	 diaDaSemana.pratoPrincipal = 'Filé de frango ao molho de limão Sciciliano / Sopa de carne com legumes';
-	 diaDaSemana.pratoVegetariano = 'Soja a Jardineira';
-	 diaDaSemana.acompanhamentos = 'Arroz, feijão colônia, fuzili';
+	 diaDaSemana.dia = 'SEGUNDA (18/01)';
+	 diaDaSemana.pratoPrincipal = 'Frango ao  aroma de gengibre';
+	 diaDaSemana.pratoVegetariano = 'Torta de legumes';
+	 diaDaSemana.acompanhamentos = 'Arroz com cenoura, feijão da colônia/ sopa';
 	 diaDaSemana.saladas = 'Purê de Jerimun';
 	 diaDaSemana.sobremesa = 'Laranja';
 	 diasDaSemana.push(diaDaSemana);
 	 diaDaSemana = {};
 
 	 //terca-feira
-	 diaDaSemana.dia = 'TERÇA (12/01)';
-	 diaDaSemana.pratoPrincipal = 'Escalopinho ao molho Chatour Brian';
-	 diaDaSemana.pratoVegetariano = 'Bolinho de Grão de Bico';
-	 diaDaSemana.acompanhamentos = 'Arroz, feijão carioquinha';
-	 diaDaSemana.saladas = 'Salada Verde';
-	 diaDaSemana.sobremesa = 'manga';
-	 diasDaSemana.push(diaDaSemana);
-	 diaDaSemana = {};
-
-	 //quarta-feira
-	 diaDaSemana.dia = 'QUARTA (13/01)';
-	 diaDaSemana.pratoPrincipal = 'Língua Assada de panela';
-	 diaDaSemana.pratoVegetariano = 'Kibe de Soja';
-	 diaDaSemana.acompanhamentos = 'Arroz, feijão carioquinha';
-	 diaDaSemana.saladas = 'Maionese de legumes';
-	 diaDaSemana.sobremesa = 'gelatina';
-	 diasDaSemana.push(diaDaSemana);
-	 diaDaSemana = {};
-
-	 //quinta-feira
-	 diaDaSemana.dia = 'QUINTA (14/01)';
-	 diaDaSemana.pratoPrincipal = 'Coxa e sobrecoxa ao forno';
+	 diaDaSemana.dia = 'TERÇA (19/01)';
+	 diaDaSemana.pratoPrincipal = 'Bife a cavalo';
 	 diaDaSemana.pratoVegetariano = 'Bife de Chuchu a dorê';
-	 diaDaSemana.acompanhamentos = 'Arroz com cenoura e ervilha, feijão da colônia';
-	 diaDaSemana.saladas = 'Salada Verde';
+	 diaDaSemana.acompanhamentos = 'Arroz branco, feijão carioquinha c/ legumes';
+	 diaDaSemana.saladas = 'Salada verde';
 	 diaDaSemana.sobremesa = 'Melancia';
 	 diasDaSemana.push(diaDaSemana);
 	 diaDaSemana = {};
 
+	 //quarta-feira
+	 diaDaSemana.dia = 'QUARTA (20/01)';
+	 diaDaSemana.pratoPrincipal = 'Dobradinha';
+	 diaDaSemana.pratoVegetariano = 'Panqueca de Soja';
+	 diaDaSemana.acompanhamentos = 'Arroz feijão da colônia';
+	 diaDaSemana.saladas = 'Chuchu,couve, cenoura, repolho, azeitona, ovos.';
+	 diaDaSemana.sobremesa = 'Manga';
+	 diasDaSemana.push(diaDaSemana);
+	 diaDaSemana = {};
+
+	 //quinta-feira
+	 diaDaSemana.dia = 'QUINTA (21/01)';
+	 diaDaSemana.pratoPrincipal = 'Escalopinho de frango chinês';
+	 diaDaSemana.pratoVegetariano = 'Berinjela recheada gratinada';
+	 diaDaSemana.acompanhamentos = 'Yakimeche/ feijão da colônia';
+	 diaDaSemana.saladas = 'Legumes Salteados no azeite';
+	 diaDaSemana.sobremesa = 'Gelatina';
+	 diasDaSemana.push(diaDaSemana);
+	 diaDaSemana = {};
+
 	 //sexta-feira
-	 diaDaSemana.dia = 'SEXTA (15/01)';
-	 diaDaSemana.pratoPrincipal = 'Pernil Suíno na chapa acebolada';
-	 diaDaSemana.pratoVegetariano = 'Hamburguer de legumes a parmegiana';
-	 diaDaSemana.acompanhamentos = 'Arroz, feijão preto';
+	 diaDaSemana.dia = 'SEXTA (22/01)';
+	 diaDaSemana.pratoPrincipal = 'Pernil suíno acebolado/ toscana assada de forno';
+	 diaDaSemana.pratoVegetariano = 'Fuzili vegetariano';
+	 diaDaSemana.acompanhamentos = 'Arroz , feijão preto, farofa';
 	 diaDaSemana.saladas = 'Beterraba ao vapor';
 	 diaDaSemana.sobremesa = 'Laranja';
 	 diasDaSemana.push(diaDaSemana);
