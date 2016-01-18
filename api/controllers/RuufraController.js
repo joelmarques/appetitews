@@ -1,11 +1,3 @@
-var url = require('url');
-var sys = require('sys');
-var request = require('request');
-var cheerio = require('cheerio');
-var Base64 = require('js-base64').Base64;
-
-var urlbase = "https://portal.ufra.edu.br/images/CAR._SEM._ANALISADO_RU_dez.pdf";
-
 /**
  * RuufraController
  *
@@ -15,14 +7,78 @@ var urlbase = "https://portal.ufra.edu.br/images/CAR._SEM._ANALISADO_RU_dez.pdf"
 
 module.exports = {
 
-	// all:function (req, res) {
-	// 	getCardapioSemanal(function(result){
-	// 		return res.json(result);
-	// 	});
-	// }
+  all:function (req, res) {
+     getCardapioSemanal(function(result){
+       return res.json(result);
+     });
+   }
 
+ };
 
-};
+ function getCardapioSemanal(callback){
+
+	 var cardapio = {};
+
+	 var cabecalhos = [];
+	 cabecalhos[0] = 'CARDÁPIO SEMANAL ANALISADO NUTRICIONALMENTE RU/UFRA';
+	 cabecalhos[1] = 'JANEIRO/2016';
+	 cardapio.cabecalhos = cabecalhos;
+
+	 var diasDaSemana = [];
+	 var diaDaSemana = {};
+
+	 //segunda-feira
+	 diaDaSemana.dia = 'SEGUNDA (18/01)';
+	 diaDaSemana.pratoPrincipal = 'PICADINHO COM LEGUMES';
+	 diaDaSemana.acompanhamentos = 'ARROZ TEMPERADO/FEIJÃO RAJADO/ FAROFA';
+	 diaDaSemana.sobremesa = 'MELÃO';
+   diaDaSemana.valorNutricional = '629,5 cal/ 130,66g de carboidrato/ 48,86g de proteínas/ 22,7g de lipídios';
+	 diasDaSemana.push(diaDaSemana);
+	 diaDaSemana = {};
+
+	 //terca-feira
+	 diaDaSemana.dia = 'TERÇA (19/01)';
+	 diaDaSemana.pratoPrincipal = 'BIFE DE FÍGADO / GRATINADO DE LEGUMES';
+	 diaDaSemana.acompanhamentos = 'ARROZ TEMPERADO/FEIJÃO JALO/FAROFA/';
+	 diaDaSemana.sobremesa = 'LARANJA';
+   diaDaSemana.valorNutricional = '1.142,3cal/ 142,65g de carboidrato/ 48,84g de proteínas/ 42,2g de lipídios';
+	 diasDaSemana.push(diaDaSemana);
+	 diaDaSemana = {};
+
+	 //quarta-feira
+	 diaDaSemana.dia = 'QUARTA (20/01)';
+	 diaDaSemana.pratoPrincipal = 'CARNE ASSADA/SALADA MISTA 2 COM MAIONESE';
+   diaDaSemana.acompanhamentos = 'ARROZ TEMPERADO/ FEIJÃO CARIOCA/ FAROFA/';
+	 diaDaSemana.sobremesa = 'MAMÃO';
+   diaDaSemana.valorNutricional = '1.072,3cal/ 132,01g de carboidrato/ 63,55g de proteínas/ 33,4g de lipídios'
+	 diasDaSemana.push(diaDaSemana);
+	 diaDaSemana = {};
+
+	 //quinta-feira
+	 diaDaSemana.dia = 'QUINTA (21/01)';
+	 diaDaSemana.pratoPrincipal = 'PEIXE ASSADO/PURÊ DE LEGUMES';
+	 diaDaSemana.acompanhamentos = 'MOLHO  VINAGRETTI/ARROZ  TEMPERADO/ FEIJÃO  PRETO/ FAROFA/';
+	 diaDaSemana.sobremesa = 'BANANA';
+   diaDaSemana.valorNutricional = '856,7cal/ 135,37g de carboidrato/ 42,9g de proteínas/ 16,7g de lipídios'
+	 diasDaSemana.push(diaDaSemana);
+	 diaDaSemana = {};
+
+	 //sexta-feira
+	 diaDaSemana.dia = 'SEXTA (22/01)';
+	 diaDaSemana.pratoPrincipal = 'CANJA/ FRANGO ASSADO/SALADA CRUA';
+	 diaDaSemana.acompanhamentos = 'MACARRÃO TEMPERADO/ FEIJÃO JALO/FAROFA/';
+	 diaDaSemana.sobremesa = 'MELANCIA';
+   diaDaSemana.valorNutricional = '980,43cal/ 87,46g de carboidrato/ 68,55g de proteínas/ 36,3g de lipídios';
+	 diasDaSemana.push(diaDaSemana);
+	 diaDaSemana = {};
+
+	 //adiciona os dias da semana ao cardapio
+	 cardapio.diasDaSemana = diasDaSemana;
+
+	 callback(cardapio)
+
+ }
+
 
 
 // var _ = require('underscore'),
