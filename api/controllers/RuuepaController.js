@@ -22,64 +22,67 @@
 	 var cabecalhos = [];
 	 cabecalhos[0] = 'RESTAURANTE UNIVERSITÁRIO - CCSE/UEPA';
 	 cabecalhos[1] = 'CARDÁPIO SEMANAL - FEVEREIRO/2016';
-   cabecalhos[2] = '1ª SEMANA';
+   cabecalhos[2] = '3ª SEMANA';
 	 cardapio.cabecalhos = cabecalhos;
 
 	 var diasDaSemana = [];
 	 var diaDaSemana = {};
 
 	 //segunda-feira
-	 diaDaSemana.dia = 'SEGUNDA (01/02)';
-	 diaDaSemana.pratoPrincipal = 'Fricassê de frango';
-	 diaDaSemana.pratoVegetariano = 'Kibe de soja no forno';
-	 diaDaSemana.acompanhamentos = 'Arroz com cenoura, feijão da colônia.';
-	 diaDaSemana.saladas = 'Repolho, couve, e cenoura refogados';
+	 diaDaSemana.dia = 'SEGUNDA (15/02)';
+	 diaDaSemana.pratoPrincipal = 'Isca de frango';
+	 diaDaSemana.pratoVegetariano = 'Hamburg de lentilha e aveia';
+	 diaDaSemana.acompanhamentos = 'Arroz branco Feijão da colônia';
+	 diaDaSemana.saladas = 'Beterraba ao vapor';
 	 diaDaSemana.sobremesa = 'Laranja';
 	 diasDaSemana.push(diaDaSemana);
 	 diaDaSemana = {};
 
 	 //terca-feira
-	 diaDaSemana.dia = 'TERÇA (02/02)';
-	 diaDaSemana.pratoPrincipal = 'Almondegas ao sugo';
-	 diaDaSemana.pratoVegetariano = 'Berinjela a dorê';
-	 diaDaSemana.acompanhamentos = 'Arroz branco, feijão carioquinha com legumes.';
-	 diaDaSemana.saladas = 'Salada verde';
+	 diaDaSemana.dia = 'TERÇA (16/02)';
+	 diaDaSemana.pratoPrincipal = 'Bife á milanesa';
+	 diaDaSemana.pratoVegetariano = 'Polenta de soja';
+	 diaDaSemana.acompanhamentos = 'Arroz branco Feijão carioca c/legumes';
+	 diaDaSemana.saladas = 'Mix de vegetais c/gergelim';
 	 diaDaSemana.sobremesa = 'Melancia';
 	 diasDaSemana.push(diaDaSemana);
 	 diaDaSemana = {};
 
 	 //quarta-feira
-	 diaDaSemana.dia = 'QUARTA (03/02)';
-	 diaDaSemana.pratoPrincipal = 'Dobradinha';
-	 diaDaSemana.pratoVegetariano = 'Hamburg de legumes à parmegiana';
+	 diaDaSemana.dia = 'QUARTA (17/02)';
+	 diaDaSemana.pratoPrincipal = 'Isca de fígado acebolada';
+	 diaDaSemana.pratoVegetariano = 'Cuscuz de verdura';
 	 diaDaSemana.acompanhamentos = 'Arroz branco e feijão carioca';
-	 diaDaSemana.saladas = 'Chuchu, couve, cenoura, repolho, azeitona e ovos';
+	 diaDaSemana.saladas = 'Legumes cozidos batata, cenoura,feijão verde e maxixe.';
 	 diaDaSemana.sobremesa = 'Manga';
 	 diasDaSemana.push(diaDaSemana);
 	 diaDaSemana = {};
 
 	 //quinta-feira
-	 diaDaSemana.dia = 'QUINTA (04/02)';
-	 diaDaSemana.pratoPrincipal = 'Coxa e sobrecoxa ao tempero do Cheff';
-	 diaDaSemana.pratoVegetariano = 'Panqueca de soja';
-	 diaDaSemana.acompanhamentos = 'Arroz branco, feijão carioca';
-	 diaDaSemana.saladas = 'Purê de batata';
+	 diaDaSemana.dia = 'QUINTA (18/02)';
+	 diaDaSemana.pratoPrincipal = 'Escalopinho de frango chinês';
+	 diaDaSemana.pratoVegetariano = 'Paella vegetariana';
+	 diaDaSemana.acompanhamentos = 'Arroz branco, feijão carioca.';
+	 diaDaSemana.saladas = 'Salada verde';
 	 diaDaSemana.sobremesa = 'Gelatina';
 	 diasDaSemana.push(diaDaSemana);
 	 diaDaSemana = {};
 
 	 //sexta-feira
-	 diaDaSemana.dia = 'SEXTA (05/02)';
-	 diaDaSemana.pratoPrincipal = 'oscana ao forno / Churrasquinho suíno';
-	 diaDaSemana.pratoVegetariano = 'Bife  de chuchu á milanesa';
+	 diaDaSemana.dia = 'SEXTA (19/02)';
+	 diaDaSemana.pratoPrincipal = 'Toscana assada';
+	 diaDaSemana.pratoVegetariano = 'Bolinho de grão de bico';
 	 diaDaSemana.acompanhamentos = 'Arroz, feijão preto.';
-	 diaDaSemana.saladas = 'Salada verde';
+	 diaDaSemana.saladas = 'Couve á mineira';
 	 diaDaSemana.sobremesa = 'Laranja';
 	 diasDaSemana.push(diaDaSemana);
 	 diaDaSemana = {};
 
 	 //adiciona os dias da semana ao cardapio
 	 cardapio.diasDaSemana = diasDaSemana;
+
+   //adiciona a observacao
+   cardapio.observacao = 'Obs.: Este cardápio poderá sofrer alterações.';
 
 	 callback(cardapio)
 

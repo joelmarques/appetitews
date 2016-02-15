@@ -75,6 +75,9 @@ module.exports = {
 	 //adiciona os dias da semana ao cardapio
 	 cardapio.diasDaSemana = diasDaSemana;
 
+   //adiciona a observacao
+   cardapio.observacao = 'OBS: Cardápios sujeitos à modificação.';
+
 	 callback(cardapio)
 
  }

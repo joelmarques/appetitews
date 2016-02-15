@@ -99,6 +99,10 @@ function getCardapioSemanal(callback) {
 								cardapio.diasDaSemana = diasDaSemana;
 							 }
 						 });
+
+						 //adiciona a observacao
+					   cardapio.observacao = 'Cardápio sujeito à alterações. Ajude o Meio Ambiente: traga seu copo ou sua caneca.';
+
 						 callback(cardapio)
 				 }
 		 });
