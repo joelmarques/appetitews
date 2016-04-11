@@ -28,47 +28,47 @@ module.exports = {
 	 var diaDaSemana = {};
 
 	 //segunda-feira
-	 diaDaSemana.dia = 'SEGUNDA (29/02)';
+	 diaDaSemana.dia = 'SEGUNDA (14/03)';
 	 diaDaSemana.pratoPrincipal = 'PICADINHO COM OVOS/ SALADA MISTA';
-	 diaDaSemana.acompanhamentos = ' ARROZ TEMPERADO/FEIJÃO JALO/ FAROFA';
+	 diaDaSemana.acompanhamentos = 'ARROZ TEMP./FEIJÃO JALO/ FAROFA';
 	 diaDaSemana.sobremesa = 'MELÃO';
    diaDaSemana.valorNutricional = 'Valor Nutricional: 1.105,04cal/ 149,51 g de carboidrato/ 58,08g de proteínas/ 28,38g de lipídios';
 	 diasDaSemana.push(diaDaSemana);
 	 diaDaSemana = {};
 
 	 //terca-feira
-	 diaDaSemana.dia = 'TERÇA (01/03)';
-	 diaDaSemana.pratoPrincipal = 'CANJA/ FRANGO ASSADO/SALADA CRUA';
-	 diaDaSemana.acompanhamentos = 'MACARRÃO TEMPERADO/ FEIJÃO PRETO/FAROFA';
+	 diaDaSemana.dia = 'TERÇA (15/03)';
+	 diaDaSemana.pratoPrincipal = 'BIFE NA CHAPA/PURÊ DE LEGUMES';
+	 diaDaSemana.acompanhamentos = 'ARROZ TEMP./FEIJÃO CARIOCA/FAROFA';
 	 diaDaSemana.sobremesa = 'MELANCIA';
-   diaDaSemana.valorNutricional = 'Valor Nutricional: 980,43cal/ 87,46g de carboidrato/ 68,55g de proteínas/ 36,3g de lipídios';
+   diaDaSemana.valorNutricional = 'Valor Nutricional: 1.178,9cal/ 133,06g de carboidrato/ 56,53g de proteínas/ 46,9g de lipídios';
 	 diasDaSemana.push(diaDaSemana);
 	 diaDaSemana = {};
 
 	 //quarta-feira
-	 diaDaSemana.dia = 'QUARTA (02/03)';
-	 diaDaSemana.pratoPrincipal = 'BIFE  NA  CHAPA/  SALADA CRUA';
-   diaDaSemana.acompanhamentos = 'ARROZ  TEMPERADO/  FEIJÃO CARIOCA/  FAROFA';
-	 diaDaSemana.sobremesa = 'LARANJA';
-   diaDaSemana.valorNutricional = 'Valor Nutricional: 1.288,6cal/ 147,26g de carboidrato/ 63,89g de proteínas/ 48,3g de lipídios'
+	 diaDaSemana.dia = 'QUARTA (16/03)';
+	 diaDaSemana.pratoPrincipal = 'CANJA/FRANGO ASSADO/SALADA CRUA';
+   diaDaSemana.acompanhamentos = '/MACARRÃO TEMP./FEIJÃO JALO/FAROFA';
+	 diaDaSemana.sobremesa = 'BANANA';
+   diaDaSemana.valorNutricional = 'Valor Nutricional: 980,43cal/ 87,46g de carboidrato/ 68,55g de proteínas/ 36,3g de lipídios'
 	 diasDaSemana.push(diaDaSemana);
 	 diaDaSemana = {};
 
 	 //quinta-feira
-	 diaDaSemana.dia = 'QUINTA (03/03)';
-	 diaDaSemana.pratoPrincipal = 'CARNE ASSADA/SALADA MISTA 2 COM MAIONESE';
-	 diaDaSemana.acompanhamentos = 'ARROZ  TEMPERADO/  FEIJÃO RAJADO FAROFA';
+	 diaDaSemana.dia = 'QUINTA (17/03)';
+	 diaDaSemana.pratoPrincipal = 'BIFE DE FÍGADO/GRATINADO DE LEGUMES';
+	 diaDaSemana.acompanhamentos = 'ARROZ  TEMPERADO/  FEIJÃO JALO FAROFA';
 	 diaDaSemana.sobremesa = 'MAMÃO';
-   diaDaSemana.valorNutricional = 'Valor Nutricional: 1.072,3cal/ 132,01g de carboidrato/ 63,55 g de proteínas/ 33,4g de lipídios'
+   diaDaSemana.valorNutricional = 'Valor Nutricional: 1.142,3cal/ 142,65 g de carboidrato/ 48,84 g de proteínas/ 42,2g de lipídios'
 	 diasDaSemana.push(diaDaSemana);
 	 diaDaSemana = {};
 
 	 //sexta-feira
-	 diaDaSemana.dia = 'SEXTA (04/03)';
-	 diaDaSemana.pratoPrincipal = 'PEIXE ASSADO/PURÊ DE LEGUMES';
-	 diaDaSemana.acompanhamentos = 'MOLHO  VINAGRETTI/ARROZ  TEMPERADO/  FEIJÃO  PRETO/ FAROFA';
-	 diaDaSemana.sobremesa = 'BANANA';
-   diaDaSemana.valorNutricional = 'Valor Nutricional: 856,7cal/ 135,37g de carboidrato/ 42,9g de proteínas/ 16,7g de lipídios';
+	 diaDaSemana.dia = 'SEXTA (18/03)';
+	 diaDaSemana.pratoPrincipal = 'FEIJOADA COMPLETA/ COUVE À MINEIRA/';
+	 diaDaSemana.acompanhamentos = 'ARROZ BRANCO/ FAROFA';
+	 diaDaSemana.sobremesa = 'LARANJA';
+   diaDaSemana.valorNutricional = 'Valor Nutricional:2.593,41cal/ 220,65g de carboidrato/154,01g de proteínas/ 117,93g de lipídios';
 	 diasDaSemana.push(diaDaSemana);
 	 diaDaSemana = {};
 
@@ -76,7 +76,7 @@ module.exports = {
 	 cardapio.diasDaSemana = diasDaSemana;
 
    //adiciona a observacao
-   cardapio.observacao = 'OBS: Cardápios sujeitos à modificação.';
+   cardapio.observacao = 'OBS: Cardápio sujeito à mudanças.';
 
 	 callback(cardapio)
 

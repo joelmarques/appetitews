@@ -21,60 +21,60 @@
 
 	 var cabecalhos = [];
 	 cabecalhos[0] = 'RESTAURANTE UNIVERSITÁRIO - CCSE/UEPA';
-	 cabecalhos[1] = 'CARDÁPIO SEMANAL - FEVEREIRO/2016';
-   cabecalhos[2] = '3ª SEMANA';
+	 cabecalhos[1] = 'CARDÁPIO SEMANAL - Abril/2016';
+   cabecalhos[2] = '1ª SEMANA';
 	 cardapio.cabecalhos = cabecalhos;
 
 	 var diasDaSemana = [];
 	 var diaDaSemana = {};
 
 	 //segunda-feira
-	 diaDaSemana.dia = 'SEGUNDA (15/02)';
-	 diaDaSemana.pratoPrincipal = 'Isca de frango';
-	 diaDaSemana.pratoVegetariano = 'Hamburg de lentilha e aveia';
+	 diaDaSemana.dia = 'SEGUNDA (04/04)';
+	 diaDaSemana.pratoPrincipal = 'Frango ao molho xadrez';
+	 diaDaSemana.pratoVegetariano = 'Macarronada de Soja';
 	 diaDaSemana.acompanhamentos = 'Arroz branco Feijão da colônia';
-	 diaDaSemana.saladas = 'Beterraba ao vapor';
-	 diaDaSemana.sobremesa = 'Laranja';
+	 diaDaSemana.saladas = 'Abóbora refogada';
+	 diaDaSemana.sobremesa = '';
 	 diasDaSemana.push(diaDaSemana);
 	 diaDaSemana = {};
 
 	 //terca-feira
-	 diaDaSemana.dia = 'TERÇA (16/02)';
-	 diaDaSemana.pratoPrincipal = 'Bife á milanesa';
-	 diaDaSemana.pratoVegetariano = 'Polenta de soja';
-	 diaDaSemana.acompanhamentos = 'Arroz branco Feijão carioca c/legumes';
-	 diaDaSemana.saladas = 'Mix de vegetais c/gergelim';
-	 diaDaSemana.sobremesa = 'Melancia';
+	 diaDaSemana.dia = 'TERÇA (05/04)';
+	 diaDaSemana.pratoPrincipal = 'Kafta';
+	 diaDaSemana.pratoVegetariano = 'Torta de Jambu';
+	 diaDaSemana.acompanhamentos = 'Arroz branco, feijão preto';
+	 diaDaSemana.saladas = 'Salada verde';
+	 diaDaSemana.sobremesa = '';
 	 diasDaSemana.push(diaDaSemana);
 	 diaDaSemana = {};
 
 	 //quarta-feira
-	 diaDaSemana.dia = 'QUARTA (17/02)';
-	 diaDaSemana.pratoPrincipal = 'Isca de fígado acebolada';
-	 diaDaSemana.pratoVegetariano = 'Cuscuz de verdura';
-	 diaDaSemana.acompanhamentos = 'Arroz branco e feijão carioca';
-	 diaDaSemana.saladas = 'Legumes cozidos batata, cenoura,feijão verde e maxixe.';
-	 diaDaSemana.sobremesa = 'Manga';
+	 diaDaSemana.dia = 'QUARTA (06/04)';
+	 diaDaSemana.pratoPrincipal = 'Língua assada de panela';
+	 diaDaSemana.pratoVegetariano = 'Quibe de Soja';
+	 diaDaSemana.acompanhamentos = 'Arroz branco Feijão da colônia';
+	 diaDaSemana.saladas = 'Purê de abóbora';
+	 diaDaSemana.sobremesa = '';
 	 diasDaSemana.push(diaDaSemana);
 	 diaDaSemana = {};
 
 	 //quinta-feira
-	 diaDaSemana.dia = 'QUINTA (18/02)';
-	 diaDaSemana.pratoPrincipal = 'Escalopinho de frango chinês';
-	 diaDaSemana.pratoVegetariano = 'Paella vegetariana';
-	 diaDaSemana.acompanhamentos = 'Arroz branco, feijão carioca.';
+	 diaDaSemana.dia = 'QUINTA (07/04)';
+	 diaDaSemana.pratoPrincipal = 'Fricassê de frango';
+	 diaDaSemana.pratoVegetariano = 'Ovos ao molho de tomate';
+	 diaDaSemana.acompanhamentos = 'Arroz branco, feijão preto.';
 	 diaDaSemana.saladas = 'Salada verde';
-	 diaDaSemana.sobremesa = 'Gelatina';
+	 diaDaSemana.sobremesa = '';
 	 diasDaSemana.push(diaDaSemana);
 	 diaDaSemana = {};
 
 	 //sexta-feira
-	 diaDaSemana.dia = 'SEXTA (19/02)';
-	 diaDaSemana.pratoPrincipal = 'Toscana assada';
-	 diaDaSemana.pratoVegetariano = 'Bolinho de grão de bico';
+	 diaDaSemana.dia = 'SEXTA (08/04)';
+	 diaDaSemana.pratoPrincipal = 'Espetinho de calabresa ou espetinho suíno';
+	 diaDaSemana.pratoVegetariano = 'Risoto de soja';
 	 diaDaSemana.acompanhamentos = 'Arroz, feijão preto.';
-	 diaDaSemana.saladas = 'Couve á mineira';
-	 diaDaSemana.sobremesa = 'Laranja';
+	 diaDaSemana.saladas = 'Baião de dois';
+	 diaDaSemana.sobremesa = '';
 	 diasDaSemana.push(diaDaSemana);
 	 diaDaSemana = {};
 
@@ -82,7 +82,7 @@
 	 cardapio.diasDaSemana = diasDaSemana;
 
    //adiciona a observacao
-   cardapio.observacao = 'Obs.: Este cardápio poderá sofrer alterações.';
+   cardapio.observacao = '';
 
 	 callback(cardapio)
 
